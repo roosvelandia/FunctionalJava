@@ -22,6 +22,6 @@ public class ImperativeVSDeclarative {
                 .reduce((x,y) -> x+y)
                 .getAsInt();
         long endTimeD = System.nanoTime() - startTimeD;
-        System.out.println("With declarative sum is =  " + sumOfEvents2 + " finished in " + endTimeD + "MS");
+        System.out.println("With declarative sum is = " + sumOfEvents2 + " finished in " + endTimeD + "MS");
     }
 }
