@@ -1,4 +1,4 @@
-package lesson4.methodreference.object_instancemethod;
+package lesson4.methodreference.class_staticmethod;
 
 import java.util.function.BiFunction;
 
