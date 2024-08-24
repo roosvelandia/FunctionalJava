@@ -1,4 +1,4 @@
-package lesson8.Reduce;
+package lesson8.Operations;
 
 import java.util.stream.Stream;
 

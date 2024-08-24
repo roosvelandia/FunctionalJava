@@ -25,7 +25,7 @@ public class MapOperation {
                 .filter(book -> book.getGenre().equals("Horror")) // intermediate operation
                 .filter(book -> book.getRating() > 4.5) // intermediate operation
                 .map(Book::getName)
-                .forEach(System.out::println); // terminal operation}
+                .forEach(System.out::println);
 
     }
 
