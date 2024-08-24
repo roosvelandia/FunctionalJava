@@ -1,2 +1,6 @@
-package lesson6.Techniques.Closures;public interface Task {
+package lesson6.Techniques.Closures;
+
+@FunctionalInterface
+public interface Task {
+    void doTask();
 }
