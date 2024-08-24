@@ -18,10 +18,10 @@ public class StreamIntroduction {
 
         // with streams
 
-        List<Book> horrorBooksStream = books.parallelStream()
-                .filter(book -> book.getGenre().equals("Horror"))
-                .filter(book -> book.getRating() > 4.5)
-                .toList();
+        List<Book> horrorBooksStream = books.parallelStream() // source
+                .filter(book -> book.getGenre().equals("Horror")) // intermediate operation
+                .filter(book -> book.getRating() > 4.5) // intermediate operation
+                .toList(); // terminal operation
 
     }
 
