@@ -29,4 +29,14 @@ public class Book {
     public double getRating() {
         return rating;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", genre='" + genre + '\'' +
+                ", rating=" + rating +
+                '}';
+    }
 }
