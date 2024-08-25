@@ -6,5 +6,5 @@
 27832,Tom,M,1988-03-15,Banglore,Developer,2019-01-10,69000.00
 27833,Michael,M,1984-04-16,London,Lead,2018-09-21,87000.00
 27834,Alexa,F,1995-10-29,Newyork City,Developer,2019-10-11,65000.00
-27835,Peter,M,1993-02-09,London,Developer,2019-10-11,63000.00
 27836,Parvati,F,1991-12-14,Jaipur,Lead,2017-06-10,89000.00
+27835,Peter,M,1993-02-09,London,Developer,2019-10-11,63000.00

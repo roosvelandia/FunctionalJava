@@ -1,8 +1,8 @@
-package com.basicsstrong.functional.section11;
+package lesson10.Collectors1;
 
 import java.sql.Date;
 
-public class Employee implements Comparable<Employee>{
+public class EmployeeC implements Comparable<EmployeeC>{
 
 	private int id;
 	private String name;
@@ -13,8 +13,8 @@ public class Employee implements Comparable<Employee>{
 	private Date joiningDate;
 	private double salary;
 
-	public Employee(int id, String name, char gender, Date dob, String city, String designation,
-			Date joiningDate, double salary) {
+	public EmployeeC(int id, String name, char gender, Date dob, String city, String designation,
+					 Date joiningDate, double salary) {
 		this.id = id;
 		this.name = name;
 		this.gender = gender;
@@ -96,7 +96,7 @@ public class Employee implements Comparable<Employee>{
 	}
 
 	@Override
-	public int compareTo(Employee o) {
+	public int compareTo(EmployeeC o) {
 		
 		if(this.id < o.id)
 		return -1;
@@ -105,5 +105,4 @@ public class Employee implements Comparable<Employee>{
 		else
 			return 0;
 	}
-
 }

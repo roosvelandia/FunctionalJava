@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-public class EmployeeSpliterator implements Spliterator<com.basicsstrong.functional.section11.Employee> {
+public class EmployeeSpliterator implements Spliterator<EmployeeC> {
 	
 	private Spliterator<String> wordSpliterator;
 	private int id;
@@ -24,7 +24,7 @@ public class EmployeeSpliterator implements Spliterator<com.basicsstrong.functio
 	}
 
 	@Override
-	public boolean tryAdvance(Consumer<? super com.basicsstrong.functional.section11.Employee> action) {
+	public boolean tryAdvance(Consumer<? super EmployeeC> action) {
 		
 		if(this.wordSpliterator.tryAdvance(word -> this.id = Integer.valueOf(word))
 				&& this.wordSpliterator.tryAdvance(word -> this.name = word)
@@ -35,7 +35,7 @@ public class EmployeeSpliterator implements Spliterator<com.basicsstrong.functio
 				&& this.wordSpliterator.tryAdvance(word -> this.joiningDate = Date.valueOf(word))
 				&& this.wordSpliterator.tryAdvance(word -> this.salary = Double.valueOf(word))
 				) {
-			action.accept(new com.basicsstrong.functional.section11.Employee(this.id,
+			action.accept(new EmployeeC(this.id,
 					this.name, 
 					this.gender, 
 					this.dob, 
@@ -51,7 +51,7 @@ public class EmployeeSpliterator implements Spliterator<com.basicsstrong.functio
 	}
 
 	@Override
-	public Spliterator<com.basicsstrong.functional.section11.Employee> trySplit() {
+	public Spliterator<EmployeeC> trySplit() {
 		return null;
 	}
 
