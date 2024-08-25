@@ -2,9 +2,9 @@ package lesson7.DesignPatterns.Strategy;
 
 public class Stock {
 
-    private String symbol;
-    private double price;
-    private int units;
+    private final String symbol;
+    private final double price;
+    private final int units;
 
     public Stock(String symbol, double price, int units) {
         this.symbol = symbol;

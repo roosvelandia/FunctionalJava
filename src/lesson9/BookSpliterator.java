@@ -9,7 +9,7 @@ public class BookSpliterator implements Spliterator<Book> {
     private String author;
     private String genre;
     private double rating;
-    private Spliterator<String> baseSpliterator;
+    private final Spliterator<String> baseSpliterator;
 
     public BookSpliterator(Spliterator<String> baseSpliterator) {
         this.baseSpliterator = baseSpliterator;
