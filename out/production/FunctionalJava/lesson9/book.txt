@@ -1,0 +1,24 @@
+conde de montecristo
+A Dumas
+Novela
+4.9
+las mil y una noches
+Anonimo
+Cuentos
+4.5
+el principito
+Antoine de Saint-Exupery
+Cuento
+4.8
+el señor de los anillos
+J.R.R. Tolkien
+Fantasia
+4.7
+el perfume
+Patrick Süskind
+Novela
+4.6
+Dune
+Frank Herbert
+Ciencia Ficcion
+3.8
