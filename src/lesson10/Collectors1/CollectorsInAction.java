@@ -60,6 +60,11 @@ public class CollectorsInAction {
             System.out.println("LEAD");
             leadEmployees.forEach(System.out::println);
 
+            // several designations
+            System.out.println("_____________ JOIN ______________");
+            String names = collectEmployeeCS.stream().map(EmployeeC::getName).collect(Collectors.joining(","));
+            System.out.println(names);
+
         } catch (java.io.IOException e) {
             e.printStackTrace();
         }
