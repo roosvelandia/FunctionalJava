@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class EmployeeSpliterator implements Spliterator<EmployeeC> {
 	
-	private Spliterator<String> wordSpliterator;
+	private final Spliterator<String> wordSpliterator;
 	private int id;
 	private String name;
 	private char gender;

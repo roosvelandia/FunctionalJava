@@ -2,10 +2,10 @@ package lesson9;
 
 public class Book {
 
-    private String name;
-    private String author;
-    private String genre;
-    private double rating;
+    private final String name;
+    private final String author;
+    private final String genre;
+    private final double rating;
 
     public Book(double rating, String genre, String author, String name) {
         this.rating = rating;
@@ -33,7 +33,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "name='" + name + '\'' +
+                "name= '" + name + '\'' +
                 ", author='" + author + '\'' +
                 ", genre='" + genre + '\'' +
                 ", rating=" + rating +

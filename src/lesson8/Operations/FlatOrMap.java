@@ -23,7 +23,7 @@ public class FlatOrMap {
 
             Path path = Path.of("src/lesson8/Operations/notebook.txt");
 
-            try (Stream<String> notebook = java.nio.file.Files.lines(path);) {
+            try (Stream<String> notebook = java.nio.file.Files.lines(path)) {
 
                 List<String> collect = notebook
                         .flatMap(line -> Arrays.stream(line.split(" ")))
