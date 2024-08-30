@@ -1,6 +1,7 @@
 package lesson11;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -23,5 +24,25 @@ public class CustomCollector {
                 .collect(toList);
 
         evens.forEach(System.out::println);
+
+        Collector<Integer, List<Integer>, List<Integer>> toSortedCollector =
+                Collector.of(
+                        ArrayList::new, // supplier
+                        (list, e) -> list.add(e), // Biconsumer
+                        (list1, list2) -> {
+                            list1.addAll(list2);
+                            return list1;
+                        },
+                        (list) -> {
+                            Collections.sort(list);
+                            return list;
+                        },// combiner Bifunction
+                        Collector.Characteristics.IDENTITY_FINISH);
+
+        List<Integer> sorted =
+        numbers.stream()
+                .collect(toSortedCollector);
+        System.out.println("________________");
+        sorted.forEach(System.out::println);
     }
 }
