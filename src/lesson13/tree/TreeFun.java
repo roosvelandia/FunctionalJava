@@ -102,4 +102,6 @@ public class TreeFun<E extends Comparable<E>> {
 	public E max() {
 		return this.right.equals(NIL) ?  this.value : this.right.max();
 	}
+
+
 }
